@@ -1,0 +1,90 @@
+[
+    {
+        "ID": 1,
+        "FullName": "Lucas Gustavo Carlos Eduardo Novaes",
+        "Document": "19328823919",
+        "Adresses": [
+            {
+                "PostalCode": "86078447",
+                "Address": "Rua Guilherme Branco Neto",
+                "Neighborhood": "Jardim Lago Norte",
+                "City": "Londrina",
+                "StateID": 18
+            }
+        ],
+        "Phones": [
+            {
+                "Number": "4326850992"
+            },
+            {
+                "Number": "43983833881"
+            }
+        ]
+    },
+    {
+        "ID": 2,
+        "FullName": "Benjamin Guilherme Rocha",
+        "Document": "02151310108",
+        "Adresses": [
+            {
+                "PostalCode": "76199970",
+                "Address": "Rua Rui Barbosa, Quadra 3 A Lote 3",
+                "Neighborhood": "Setor Central",
+                "City": "Cezarina",
+                "StateID": 9
+            }
+        ],
+        "Phones": [
+            {
+                "Number": "6435772469"
+            },
+            {
+                "Number": "64998782703"
+            }
+        ]
+    },
+    {
+        "ID": 3,
+        "FullName": "Jaqueline Sophie Amanda da Cruz",
+        "Document": "22150847744",
+        "Adresses": [
+            {
+                "PostalCode": "29240970",
+                "Address": "Avenida Getúlio Vargas, s/n",
+                "Neighborhood": "Centro",
+                "City": "Alfredo Chaves",
+                "StateID": 8
+            }
+        ],
+        "Phones": [
+            {
+                "Number": "2727845084"
+            },
+            {
+                "Number": "27983166446"
+            }
+        ]
+    },
+    {
+        "ID": 4,
+        "FullName": "Andrea Isabel Francisca Aparício",
+        "Document": "42485455600",
+        "Adresses": [
+            {
+                "PostalCode": "37420971",
+                "Address": "Rua Congonhal, S/n",
+                "Neighborhood": "Congonhal",
+                "City": "Cambuquira",
+                "StateID": 11
+            }
+        ],
+        "Phones": [
+            {
+                "Number": "3536475757"
+            },
+            {
+                "Number": "35991620099"
+            }
+        ]
+    }
+]

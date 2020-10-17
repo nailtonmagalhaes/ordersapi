@@ -1,0 +1,44 @@
+[
+    {
+        "ID": 1,
+        "Description": "Coca Cola",
+        "UnitPrice": 5.99,
+        "CategoryID": 1
+    },
+    {
+        "ID": 2,
+        "Description": "Suco de Uva Integral",
+        "UnitPrice": 12.5,
+        "CategoryID": 1
+    },
+    {
+        "ID": 3,
+        "Description": "Sabão em Pó",
+        "UnitPrice": 9.99,
+        "CategoryID": 2
+    },
+    {
+        "ID": 4,
+        "Description": "Agua sanitária",
+        "UnitPrice": 2.99,
+        "CategoryID": 2
+    },
+    {
+        "ID": 5,
+        "Description": "Cobertor",
+        "UnitPrice": 45,
+        "CategoryID": 3
+    },
+    {
+        "ID": 6,
+        "Description": "Edredon",
+        "UnitPrice": 98,
+        "CategoryID": 3
+    },
+    {
+        "ID": 7,
+        "Description": "Lençol",
+        "UnitPrice": 30,
+        "CategoryID": 3
+    }
+]

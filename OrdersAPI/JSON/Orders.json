@@ -1,0 +1,87 @@
+[
+    {
+        "ID": 1,
+        "Date": "2020-10-15T00:08",
+        "Number": "1234",
+        "TotalPrice": 73.72,
+        "ShippingCost": 24.24,
+        "CustomerID": 1,
+        "Items": [
+            {
+                "Quantity": 2,
+                "TotalPrice": 11.98,
+                "ProductID": 1
+            },
+            {
+                "Quantity": 3,
+                "TotalPrice": 37.5,
+                "ProductID": 2
+            }
+        ]
+    },
+    {
+        "ID": 2,
+        "Date": "2020-10-15T00:09",
+        "Number": "1235",
+        "TotalPrice": 79.89,
+        "ShippingCost": 18.89,
+        "CustomerID": 2,
+        "Items": [
+            {
+                "Quantity": 2,
+                "TotalPrice": 60,
+                "ProductID": 5
+            }
+        ]
+    },
+    {
+        "ID": 3,
+        "Date": "2020-10-15T00:12",
+        "Number": "1236",
+        "TotalPrice": 100.92,
+        "ShippingCost": 47.96,
+        "CustomerID": 3,
+        "Items": [
+            {
+                "Quantity": 2,
+                "TotalPrice": 25,
+                "ProductID": 2
+            },
+            {
+                "Quantity": 1,
+                "TotalPrice": 9.99,
+                "ProductID": 3
+            },
+            {
+                "Quantity": 3,
+                "TotalPrice": 17.97,
+                "ProductID": 1
+            }
+        ]
+    },
+    {
+        "ID": 4,
+        "Date": "2020-10-15T00:12",
+        "Number": "1236",
+        "TotalPrice": 249.97,
+        "ShippingCost": 0,
+        "CustomerID": 4,
+        "Items": [
+            {
+                "Quantity": 3,
+                "TotalPrice": 8.97,
+                "ProductID": 4
+            },
+            {
+                "Quantity": 2,
+                "TotalPrice": 196,
+                "ProductID": 6
+            },
+            {
+                "Quantity": 1,
+                "TotalPrice": 45,
+                "ProductID": 5
+            }
+        ]
+    }
+]

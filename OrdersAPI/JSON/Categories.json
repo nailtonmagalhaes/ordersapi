@@ -1,0 +1,14 @@
+[
+    {
+        "Name": "Bebidas",
+        "ID": 1
+    },
+    {
+        "Name": "Limpeza",
+        "ID": 2
+    },
+    {
+        "Name": "Tecidos",
+        "ID": 3
+    }
+]
