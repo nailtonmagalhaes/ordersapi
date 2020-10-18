@@ -7,6 +7,7 @@ using OrdersAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using OrdersAPI.Repositories;
 using OrdersAPI.Repositories.Interfaces;
+using Microsoft.AspNetCore.Server.IISIntegration;
 
 namespace OrdersAPI
 {
@@ -19,7 +20,6 @@ namespace OrdersAPI
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("DbOrdersControl"));
@@ -37,9 +37,23 @@ namespace OrdersAPI
             );
 
             services.AddResponseCompression();
+
+            services.AddCors(options => options.AddDefaultPolicy(builder =>
+            {
+                builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+            }));
+            // services.AddCors(options =>
+            // {
+            //     options.AddPolicy(
+            //       "CorsPolicy",
+            //       builder => builder.WithOrigins("http://localhost:4200")
+            //                         .AllowAnyMethod()
+            //                         .AllowAnyHeader()
+            //                         .AllowCredentials());
+            // });
+            // services.AddAuthentication(IISDefaults.AuthenticationScheme);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -51,7 +65,7 @@ namespace OrdersAPI
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
@@ -59,6 +73,13 @@ namespace OrdersAPI
             });
 
             app.UseResponseCompression();
+
+            app.UseCors(options =>
+            {
+                options.AllowAnyOrigin();
+                options.AllowAnyMethod();
+                options.AllowAnyHeader();
+            });
 
             app.ApplicationServices.CreateScope().ServiceProvider.GetService<DataContext>().Database.EnsureCreated();
         }
