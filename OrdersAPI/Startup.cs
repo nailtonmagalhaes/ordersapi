@@ -87,11 +87,11 @@ namespace OrdersAPI
 
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
+                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
-                    Title = "Place Info Service API",
-                    Version = "v2",
-                    Description = "Sample service for Learner",
+                    Title = "Orders Control API",
+                    Version = "v1",
+                    Description = "Orders Control Sistem",
                 });
             });
 
@@ -121,7 +121,7 @@ namespace OrdersAPI
             app.UseResponseCompression();
 
             app.UseSwagger();
-            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "PlaceInfo Services"));
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "Orders Control"));
 
             app.ApplicationServices.CreateScope().ServiceProvider.GetService<DataContext>().Database.EnsureCreated();
         }
