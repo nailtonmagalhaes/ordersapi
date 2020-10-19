@@ -91,7 +91,7 @@ namespace OrdersAPI
                 {
                     Title = "Orders Control API",
                     Version = "v1",
-                    Description = "Orders Control Sistem",
+                    Description = "Orders Control System",
                 });
             });
 
